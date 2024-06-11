@@ -5,13 +5,22 @@
 
   display: inline-flex;
   position: relative;
+  border-radius: rem(6px);
   overflow: hidden;
-  background-color: var(--color-accent);
+  color: var(--color-white);
 
   &__text {
     position: relative;
     font-size: rem(14px);
     letter-spacing: var(--border-radius);
     text-align: center;
+  }
+
+  &--accent {
+    background-color: var(--color-accent);
+  }
+
+  &--secondary {
+    background-color: var(--color-secondary);
   }
 }

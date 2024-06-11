@@ -6,7 +6,6 @@ const StylelintPlugin = require('stylelint-webpack-plugin')
 const ESLintPlugin = require('eslint-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const FileManagerPlugin = require('filemanager-webpack-plugin')
-const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
 const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin');
 const config = require('./config')
@@ -95,10 +94,6 @@ module.exports = {
       // {
       //   test: /\.(png|svg|jpg|jpeg|webp)$/i,
       //   type: 'asset/resource',
-      // },
-      // {
-      //   test: /\.html$/i,
-      //   loader: 'html-loader',
       // },
     ],
   },
